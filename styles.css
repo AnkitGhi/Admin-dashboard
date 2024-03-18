@@ -1,0 +1,139 @@
+*{
+    box-sizing:border-box;
+}
+.container{
+    display:grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr 1.1fr 1.1fr 1.1fr;
+}
+
+#sidebar{
+    grid-column: 1;
+    grid-row: 1/span 2;
+    background-color: lightblue;
+    color:white;
+    padding-left:50px;
+    padding-top:40px;    
+}
+
+#search{
+    grid-column: 2/span 3;
+    grid-row: 1;
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    padding-top:15px;
+}
+
+#projects{
+    grid-column: 2/span 2;
+    grid-row: 2;
+    padding-left: 40px;
+    padding-top: 30px;
+    background-color: azure;
+}
+
+#right-side{
+    grid-column: 4;
+    grid-row: 2;
+    background-color: azure;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+.first{
+    display:flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.notify{
+    display:flex;
+    gap:20px;
+}
+.second{
+    display:flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.left{
+    display:flex;
+    gap:10px;
+}
+.right{
+    display:flex;
+    gap: 40px;
+}
+
+button{
+    color:white;
+    background-color: aqua;
+    padding-left:25px;
+    padding-right:25px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border-radius: 30px;
+    height:40px;
+}
+
+.trending{
+    background-color: white;
+}
+
+.projects-des{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,45%));
+    height:400px; 
+    gap: 20px;
+
+}
+.left-items{
+    display:flex;
+    gap:10px;
+    align-items: center;
+}
+.des{
+    border: 1px solid black;
+    padding: 15px;
+    background-color: white;
+    border-left: 5px solid darkgoldenrod; /* Add a red border to the left side */
+    border-radius: 20px;
+}
+
+.type-search{
+    display:flex;
+    gap: 40px;
+    justify-content: center;
+}
+input{
+    height:30px;
+    width:600px;
+    border-radius: 30px;
+}
+#hi{
+    font-size: 15px;
+}
+.announcements{
+    display:grid;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid black;
+    background-color: white;
+}
+.announce{
+    border-bottom: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.trend-items{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    border: 1px solid black;
+    padding-top:20px;
+    padding-left:20px;
+}
+.tditems{
+    display:flex;
+    gap:20px;
+}
